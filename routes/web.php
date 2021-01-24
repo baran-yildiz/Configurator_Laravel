@@ -21,5 +21,3 @@ Route::get('/', [routConf::class,'routCon']);
 Route::post('/submit', [form::class,'saveData']);
 
 Route::post('/ajax', [AjaxController::class,'index'])->name('ajax');
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
