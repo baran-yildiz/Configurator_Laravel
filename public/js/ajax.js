@@ -52,14 +52,14 @@ function showLange( name )
         selectsLeft[3].disabled = false;
         verbinder = $("#linke").val();
         isoliert = $("#isol").val();
-        breite = $("widthl").val();
+        breite = $("#widthl").val();
         lange = 0;
         
     }else if (name == "widthr"){
         selectsRight[3].disabled = false;
         verbinder = $("#rechte").val();
         isoliert = $("#isor").val();
-        breite = $("widthr").val();
+        breite = $("#widthr").val();
         lange = 0;  
     }
     
@@ -77,12 +77,13 @@ function showLange( name )
          },
          success:function(response){
             response = JSON.parse(response);
+            console.log(response[0]);
             if (name == "widthl"){
                 selectsLeft[3].innerHTML = "<option value = 0>Bitte Auswaehlen</option>";
                 response.forEach(item => selectsLeft[3].innerHTML += `<option value = ${item.lenl}>${item.lenl}</option>`);
             }else if(name == "widthr"){
-                selectsLeft[3].innerHTML = "<option value = 0>Bitte Auswaehlen</option>";
-                response.forEach(item => selectsLeft[3].innerHTML += `<option value = ${item.lenr}>${item.lenr}</option>`);
+                selectsRight[3].innerHTML = "<option value = 0>Bitte Auswaehlen</option>";
+                response.forEach(item => selectsRight[3].innerHTML += `<option value = ${item.lenr}>${item.lenr}</option>`);
             }
            }
          
@@ -95,15 +96,15 @@ function showFarbe( name )
         selectsLeft[4].disabled = false;
         verbinder = $("#linke").val();
         isoliert = $("#isol").val();
-        breite = $("widthl").val();
-        lange = $("lenl").val();
+        breite = $("#widthl").val();
+        lange = $("#lenl").val();
         
     }else if (name == "lenr"){
         selectsRight[4].disabled = false;
         verbinder = $("#rechte").val();
         isoliert = $("#isor").val();
-        breite = $("widthr").val();
-        lange = $("lenr").val();   
+        breite = $("#widthr").val();
+        lange = $("#lenr").val();   
     }
     
     $.ajax({
@@ -119,12 +120,13 @@ function showFarbe( name )
                  _token: token
          },
          success:function(response){
-            if (name == "widthl"){
+            response = JSON.parse(response);
+            if (name == "lenl"){
                 selectsLeft[4].innerHTML = "<option value = 0>Bitte Auswaehlen</option>";
                 response.forEach(item => selectsLeft[4].innerHTML += `<option value = ${item.farbel}>${item.farbel}</option>`);
-            }else if(name == "widthr"){
-                selectsLeft[4].innerHTML = "<option value = 0>Bitte Auswaehlen</option>";
-                response.forEach(item => selectsLeft[4].innerHTML += `<option value = ${item.farber}>${item.farber}</option>`);
+            }else if(name == "lenr"){
+                selectsRight[4].innerHTML = "<option value = 0>Bitte Auswaehlen</option>";
+                response.forEach(item => selectsRight[4].innerHTML += `<option value = ${item.farber}>${item.farber}</option>`);
             }
            }
          
