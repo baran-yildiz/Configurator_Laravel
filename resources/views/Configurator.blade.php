@@ -476,13 +476,13 @@
                 </tr>
                 <tr>
                     <td id= "artab">de</td>
-                    <td>dene</td>
-                    <td>deneme</td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>dene</td>
-                    <td >deneme</td>
-                    <td>deme4</td>
+                    <td></td>
+                    <td ></td>
+                    <td></td>
                 </tr>
             </table>
 
