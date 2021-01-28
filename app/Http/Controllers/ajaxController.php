@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 use DB;
-use App\Quotation;
-use App\Models\cable;
 use Illuminate\Http\Request;
-use DataTables;
 use Response;
-use IlluminateSupportFacadesDB;
+use App\Http\Controllers\Controller;
+use App\Http\Requests;
 
 class ajaxController extends Controller
 {
@@ -30,7 +28,7 @@ class ajaxController extends Controller
             $lange = json_encode($lange);
             return response()->json($lange);
         }else if ($length == 0 && $name == "widthr") {    
-            $lange = DB::select('select distinct lenrt from cables where rechte = ? and isor = ? and widthr = ? order by lenr', [$verbinder, $isoliert, $width]);
+            $lange = DB::select('select distinct lenr from cables where rechte = ? and isor = ? and widthr = ? order by lenr', [$verbinder, $isoliert, $width]);
             $lange = json_encode($lange);
             return response()->json($lange);
         }else if ($name == "lenl") {    
@@ -38,7 +36,7 @@ class ajaxController extends Controller
             $farbe = json_encode($farbe);
             return response()->json($farbe);
         }else if ($name == "lenr") {    
-            $farbe = DB::select('select distinct farber from cables where rechte = ? and isor = ? and widthr = ? and lenr = ? order by farbel', [$verbinder, $isoliert, $width, $length]);
+            $farbe = DB::select('select distinct farber from cables where rechte = ? and isor = ? and widthr = ? and lenr = ? order by farber', [$verbinder, $isoliert, $width, $length]);
             $farbe = json_encode($farbe);
             return response()->json($farbe);
         }
