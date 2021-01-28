@@ -344,7 +344,7 @@
             </select>
 
             <h5 class="breite">BREITE :</h5>
-            <h5 id= "lenr">LANGE  :</h5>
+            <h5 id= "lenrh">LANGE  :</h5>
             <h5 class= "farbe">FARBE  :</h5>
 
             <select class="skucuk" onchange = "closeOpts(this.name);showLange(this.name)" name="widthr" id="widthr" disabled>
@@ -475,7 +475,7 @@
                     <th>PREIS BRUTTO</th>
                 </tr>
                 <tr>
-                    <td id= "artab"></td>
+                    <td id= "artab">de</td>
                     <td></td>
                     <td></td>
                 </tr>
