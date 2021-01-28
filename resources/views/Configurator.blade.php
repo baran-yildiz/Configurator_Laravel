@@ -38,7 +38,7 @@
             <img class = "img_kucuk" id= "imgLeft" src="/configurator photos/Aderendhuelse/Blau.png">
         </div>
         <!--                 ****Middle of the picture...***                        -->
-        <div class="orta_div" style="width:598px; height:100px; float: left">
+        <div class="orta_div">
             <img class="img_orta" id= "imgCenter" src="/configurator photos/litzen/Blau.png">
         </div>
 
