@@ -252,6 +252,12 @@ select#farber{
     float: left
 }
 
+.orta_div{
+	width:598px; 
+	height:100px; 
+	float: left
+}
+
 #leftSide.buyuk_div{ 
     height: 220px;
 }
