@@ -2,115 +2,362 @@
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 10px) and (max-width: 900px)
-
-{
-
-    .buyuk_div{
-
-        width: 100%!important;
-
-    }
-
-    .orta_div{
-
-        width: 60%!important;
-        height: 100px!important;
-    }
-
-    .korta_div{
-        width: 32%!important;
-        height:390px!important;
-        margin-left: 1vw!important;
-    }
-
-    .kucuk_div{
-        width: 20%!important;
-        height: 100px!important;
-    }
-
-    h3{
-        font-size: 3vw!important;
-        margin-bottom: 15px;
-    }
-
-    h4{
-        font-size: 2.5vw!important;
-        margin-left: 2px!important;
-        width: 60%!important;
-        margin-top: 15px!important;
-        margin-bottom: 15px!important;
-        float: left!important;
-        height: 21px!important;
-        padding-top: 9px!important;
-        text-align: end!important;
-    }
-
-    h5{
-        font-size: 2.4vw!important;
-        margin-left: 0px!important;
-        width: 63%!important;
-        float: left!important;
-        text-align: end!important;
-        margin-top: 15px!important;
-        margin-bottom: 15px!important;
-        height: 21px!important;
-        padding-top: 9px!important;
-    }
-
-    .skucuk{
-        width: 35%!important;
-        margin-top: 15px!important;
-        margin-bottom: 15px!important;
-        clear: left!important;
-        margin-left: 2px!important;
-        float: none!important;
-    }
-
-    .sorta{
-        width: 35%!important;
-        margin-top: 15px!important;
-        margin-bottom: 15px!important;
-        clear: left!important;
-        float: none!important;
-        margin-left: 2px!important;
-    }
-
-    th{
-        font-size: 3vw!important;
-    }
-
-    td{
-        font-size: 3vw!important;
-    }
-
-    input{
-        width:29%!important;
-        margin-left: 2vw!important;
-        margin-right: 0.5vw!important;
-        margin-top: 20px!important;
-        margin-bottom: 15px!important;
-        height: 15px!important;
-        font-size: 11px!important;
-    }
-
-    button{
-        width: 39%!important;
-    }
-
-    .img_kucuk{
-        width : 100%!important;
-        height: 100px!important;
-    }
-
-    .img_orta{
-        width : 100%!important;
-        height: 100px!important;
-    }
-
+a{
+    color:black; 
+    font-family:Arial; 
+    font-size:10px; 
+    float:right
 }
 
-#resimsol {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+h3 {
+    text-align:center;
+    color:  white; 
+    padding: 5px; 
+    font-size: 15px; 
+    border-bottom: 1px solid #120a8f;
+    font-family: Arial;
+    background-color: #4e39ec;
+    margin-top: 0px;
+    height: 35px;
+}
+
+h3#rechteh{
+    border-bottom: 1px solid #120a8f
+}
+
+h4 {
+    margin-top: 5px;
+    color:  #4e39ec;
+    padding-left: 5px;
+    text-decoration: underline; 
+    margin-bottom: 5px; 
+    font-size: 13px;
+    float: left;
+    font-family: Arial;
+}
+
+
+h4#isolh{
+    width: 210px; 
+    margin-left: 12px;  
+}
+
+h4#kabeltyp{   
+    float:left;    
+}
+
+
+h4#lange{
+    width: 148px;
+    float:left;
+    margin-top: 15px;
+}
+h5 {
+    margin-top: 5px;
+    color:  #4e39ec;
+    padding-left: 5px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-family: Arial
+}
+
+h5#verbinder{
+    float:left
+}
+
+h5#isorh{
+    float:left; 
+    margin-left: 72px;
+}
+
+h5.breite{
+    margin-top: 15px;
+    width: 63px;
+    clear: left;
+    float:left
+}
+h5#lenr{
+    margin-top: 15px;
+    width: 148px; 
+    float:left   
+}
+h5.farbe{
+    margin-top: 15px;
+    width: 58px;
+    float:left
+}
+
+h5#beschlink{
+    margin-top:35px;
+    float:left
+}
+
+h5#farbort{ 
+    padding-left: 8px; 
+    margin-top:10px; 
+    width: 150px; 
+    clear:both; 
+    text-align: left;
+    float: left;
+    margin-bottom: 27px
+} 
+
+h5#kabeldicke{ 
+    margin-left:82px; 
+    float:left;
+}
+
+h5#lenort{
+    margin-top:15px;
+    width:100px;
+    clear:left;
+    float: left
+}
+
+h5#beschmid{
+    margin-top:6px;
+    float:left;
+    margin: 2px
+}
+
+h5#beschrecht{
+    margin-top:35px;
+    float:left;
+}
+
+h5#anzahl{
+    float:left; 
+    font-size:12px;
+    margin-top:23px
+}
+
+input{
+    border-radius: 3px; 
+    margin-right : 4px;
+    font-size : 12px;
+    height : 16px;
+    font-family: Arial
+}
+
+input#beschlink{
+    margin-top: 34px; 
+    width: 86px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    float : right
+}
+
+input#beschmid{
+    width: 88px; 
+    float : right;
+    height: 17px;
+}
+
+input#beschright{
+    margin-top:34px;
+    width: 75px;
+    float : right
+}
+
+input#lenk {
+    margin-top:11px;
+    width: 139px;
+    float : left; 
+    height: 20px;
+    margin-left: 65px
+}
+
+input#anzahl{
+    width: 101px;
+    margin-left:10px; 
+    margin-top: 20px;
+    float: left
+}
+
+select{
+    font-family:Arial; 
+    width:90px; 
+    margin-top:0px; 
+    border-radius: 3px; 
+    margin-left:2px; 
+}
+
+select.verbinder{
+    float:left;
+    width: 140px;
+    margin-bottom: 15px
+}
+
+select.iso{
+    width:140px; 
+}
+
+select#widthl{
+    width: 90px;
+    float:left
+}
+
+select#lenl{ 
+    width:90px; 
+}
+select#farbel{ 
+    width:90px;  
+    margin-left:10px
+}
+select#kabeltyp{
+    float:left; 
+    width:140px; 
+    height: auto; 
+    margin-bottom: 12px
+}
+
+select#kabeldicke{
+    float:left; 
+    width:140px; 
+    height: auto;  
+    margin-left: 22px
+}
+
+select#farbek{
+    width:140px;
+    margin-top:6px; 
+    margin-left: 15px;
+    float: left;
+    margin-bottom: 5px
+}
+
+select#widthr{
+    width:90px;
+    float: left 
+}
+
+select#lenr{ 
+    width:90px; 
+    margin-left:10px
+}
+
+select#farber{ 
+    width:90px;  
+    margin-left:10px
+}
+
+.buyuk_div{ 
+    width: 965px;
+}
+
+.kucuk_div{
+    width:160px; 
+    height:100px; 
+    float: left
+}
+
+#leftSide.buyuk_div{ 
+    height: 220px;
+}
+
+#imgDiv.buyuk_div{ 
+    height: 100px;
+    width: 959px;
+    border: 1px solid black; 
+    border-radius: 3px;
+    box-shadow:2px 3px silver; 
+    border-radius: 3px
+}
+
+#anzahlMost.buyuk_div{ 
+    align-items : "center";
+}
+
+#anzahlMiddle.buyuk_div{ 
+    height: 50px; 
+    background-color: rgb(235, 231, 231); 
+    border-radius: 3px; 
+    display: inline-block; 
+    margin-top: 10px; 
+    clear: left
+}
+
+#tableMost.buyuk_div{ 
+    align-items : "center";
+}
+
+#tableMiddle.buyuk_div{
+    height: 210px;
+    background-color:  rgb(235, 231, 231); 
+    border-radius: 3px; 
+    display: inline-block; 
+    margin-top: 10px;
+    clear:left
+}
+
+#final.buyuk_div{ 
+    align-items : "center";
+    width : "940px";
+}
+
+#finalChild.buyuk_div{
+    width: 968px;
+    height: 50px;
+    background-color: rgb(235, 231, 231); 
+    border-radius: 3px; 
+    box-shadow: 2px 3px; 
+    display: inline-block; 
+    margin-top: 10px;
+    clear: left;
+}
+
+.korta_div{
+    margin-top:12px; 
+    float: left; 
+    margin-left: 2px; 
+    width: 319px; 
+    height: 250px; 
+    background-color :rgb(235, 231, 231);
+    border-radius:3px
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    height: 70px;
+  }
+  
+  tr:nth-child(even){background-color: #f8f8f8}
+  
+  th {
+    background-color:  #4e39ec;
+    color: white;  
+  }
+
+button
+{
+    border-radius: 3px;
+    width:10%;
+    height:50px; 
+    background-color:  #4e39ec; 
+    color: white; 
+    font-size: 10px;
+    float: left
+}
+
+button#redirect
+{
+    float: right
+}
+
+.img_kucuk{
+    width : 100%!important;
+    height: 100px!important;
+}
+
+.img_orta{
+    width : 100%!important;
+    height: 100px!important;
 }
